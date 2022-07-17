@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageVersion>0.1.0</PackageVersion>
+        <Title>SparrowLock Swiss Army Knife</Title>
+        <Authors>cinderblockgames</Authors>
+        <Description>A library of common code for reuse.</Description>
+        <PackageLicenseUrl>https://unlicense.org/</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/cinderblockgames/sparrowlock-swiss-army-knife</RepositoryUrl>
+        <Company>cinderblockgames</Company>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\LICENSE">
+        <Link>LICENSE</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>
