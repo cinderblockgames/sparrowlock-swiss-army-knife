@@ -354,7 +354,7 @@ public static class File
     //     path is in an invalid format.
     public static StreamWriter AppendText(string path)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.AppendText(path);
     }
 
     /// <summary>
@@ -488,7 +488,7 @@ public static class File
     //     path is in an invalid format.
     public static FileStream Create(string path)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.Create(path);
     }
 
     //
@@ -531,7 +531,7 @@ public static class File
     //     path is in an invalid format.
     public static FileStream Create(string path, int bufferSize)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.Create(path, bufferSize);
     }
 
     //
@@ -578,7 +578,7 @@ public static class File
     //     path is in an invalid format.
     public static FileStream Create(string path, int bufferSize, FileOptions options)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.Create(path, bufferSize, options);
     }
 
     //
@@ -615,7 +615,7 @@ public static class File
     //     path is in an invalid format.
     public static StreamWriter CreateText(string path)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.CreateText(path);
     }
 
     //
@@ -1151,7 +1151,7 @@ public static class File
     //     path is in an invalid format.
     public static FileStream Open(string path, FileMode mode)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.Open(path, mode);
     }
 
     //
@@ -1209,7 +1209,7 @@ public static class File
     //     path is in an invalid format.
     public static FileStream Open(string path, FileMode mode, FileAccess access)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.Open(path, mode, access);
     }
 
     //
@@ -1271,7 +1271,7 @@ public static class File
     //     path is in an invalid format.
     public static FileStream Open(string path, FileMode mode, FileAccess access, FileShare share)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.Open(path, mode, access, share);
     }
 
     //
@@ -1387,7 +1387,7 @@ public static class File
     //     path is in an invalid format.
     public static FileStream OpenWrite(string path)
     {
-        throw new NotImplementedException(); // idk
+        return Underlying.OpenWrite(path);
     }
 
     //
@@ -1968,7 +1968,7 @@ public static class File
     //     not have the required permission.
     public static void SetAttributes(string path, FileAttributes fileAttributes)
     {
-        throw new NotImplementedException(); // idk
+        Underlying.SetAttributes(path, fileAttributes);
     }
 
     //
@@ -2011,7 +2011,7 @@ public static class File
     //     path is in an invalid format.
     public static void SetCreationTime(string path, DateTime creationTime)
     {
-        throw new NotImplementedException(); // idk
+        Underlying.SetCreationTime(path, creationTime);
     }
 
     //
@@ -2055,7 +2055,7 @@ public static class File
     //     path is in an invalid format.
     public static void SetCreationTimeUtc(string path, DateTime creationTimeUtc)
     {
-        throw new NotImplementedException(); // idk
+        Underlying.SetCreationTimeUtc(path, creationTimeUtc);
     }
 
     //
@@ -2095,7 +2095,7 @@ public static class File
     //     for this operation.
     public static void SetLastAccessTime(string path, DateTime lastAccessTime)
     {
-        throw new NotImplementedException(); // idk
+        Underlying.SetLastAccessTime(path, lastAccessTime);
     }
 
     //
@@ -2136,7 +2136,7 @@ public static class File
     //     for this operation.
     public static void SetLastAccessTimeUtc(string path, DateTime lastAccessTimeUtc)
     {
-        throw new NotImplementedException(); // idk
+        Underlying.SetLastAccessTimeUtc(path, lastAccessTimeUtc);
     }
 
     //
@@ -2176,7 +2176,7 @@ public static class File
     //     for this operation.
     public static void SetLastWriteTime(string path, DateTime lastWriteTime)
     {
-        throw new NotImplementedException(); // idk
+        Underlying.SetLastWriteTime(path, lastWriteTime);
     }
 
     //
@@ -2217,7 +2217,7 @@ public static class File
     //     for this operation.
     public static void SetLastWriteTimeUtc(string path, DateTime lastWriteTimeUtc)
     {
-        throw new NotImplementedException(); // idk
+        Underlying.SetLastWriteTimeUtc(path, lastWriteTimeUtc);
     }
 
     //
