@@ -1,13 +1,15 @@
-namespace SLSAK.Extensions;
+using Underlying = System.Environment;
 
-public static class EnvironmentExtensions
+namespace SLSAK.Utilities;
+
+public static class Environment
 {
     public static IDictionary<string, string> GetEnvironmentVariables(bool caseSensitive)
     {
         var comparer = caseSensitive ? StringComparer.Ordinal : StringComparer.OrdinalIgnoreCase;
         var result = new Dictionary<string, string>(comparer);
 
-        var env = Environment.GetEnvironmentVariables();
+        var env = Underlying.GetEnvironmentVariables();
         foreach (string key in env.Keys)
         {
             var obj = env[key];
